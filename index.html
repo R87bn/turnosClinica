@@ -2,14 +2,25 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="./src/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Turno de Clínica</title>
   </head>
   <body>
-    <div id="app">
-      <h1>Bootcamp JS - JavaScript SandBox</h1>
+    <div class="turno-display">
+      <h1 class="numero-turno" id="turnoActual">01</h1>
+      <p class="texto-turno">Por favor, acérquese al mostrador</p>
+      <div class="botones">
+        <button id="btnAnterior">Anterior</button>
+        <button id="btnSiguiente">Siguiente</button>
+        <button id="btnReset">Reset</button>
+      </div>
+      <div class="manual">
+        <input type="number" id="inputTurno" placeholder="Ingrese el turno" />
+        <button id="btnCambiar">Cambiar turno</button>
+      </div>
     </div>
-    <script type="module" src="/src/main.js"></script>
+    <div id="error-message" class="error-message"></div>
+    <script src="./src/main.js"></script>
   </body>
 </html>
